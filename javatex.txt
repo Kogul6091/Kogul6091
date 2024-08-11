@@ -1,0 +1,352 @@
+package www.domain.com;
+
+import java.util.Scanner;
+	public class Demo{
+		public static int Even(int inp) {
+			
+			if(inp%2==0) {
+				return 2;
+			}
+			else {
+				return 1;
+			}
+		}
+			
+		public static void main(String[]args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter a Number");
+			int a=sc.nextInt();
+			int b=Even(a);
+			System.out.println(b);
+			
+		}
+	}
+************************************************************************
+import java.util.Scanner;
+public class demo2 {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>0){
+            System.out.println("Positive");
+        }
+        else if(a==0){
+            System.out.println("zero");
+        }
+        else{
+            System.out.println("negative");
+        }
+    }
+    
+}
+***********************************************
+import java.util.Scanner;
+public class demo2 {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        boolean kog=(a%10==b%10);
+        System.out.println(kog);
+    }
+    
+}
+*******************************************
+import java.util.Scanner;
+public class demo2 {
+    public static int evenorodd(int inp){
+    if(inp%2==0){
+        return 1;
+    }
+    return 0;
+}
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=evenorodd(a);
+        if(b==1){
+            System.out.println("The given number is even");
+        }
+        else{
+            System.out.println("The given number is odd");
+        }
+        System.out.println(b);
+    }
+    
+}
+******************************************************
+import java.util.Scanner;
+public class demo2 {
+    
+    public static void main(String[]args){
+    if(args.length==0){
+        System.out.println("No values");
+    }
+    else{
+    for(int i=0;i<args.length;i++){
+        System.out.print(args[i]);
+        if(i<args.length-1){
+            System.out.print(", ");
+        }
+    }
+    }
+}
+}
+*****************************************************	
+import java.util.Scanner;
+public class demo2 {
+    
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        char abc=sc.next().charAt(0);
+        char def=sc.next().charAt(0);
+
+        if(abc<def){
+            System.out.println(abc +"," +def);
+        }
+        else{
+            System.out.println(def +", "+abc);
+        }
+}
+}
+*******************************************************
+import java.util.Scanner;
+public class demo2 {
+    
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            char ch=sc.next().charAt(0);
+
+            if((ch>=65 &&ch<=90) || (ch>=97 && ch<=122)){
+                System.out.println("alphabet");
+            }
+            else if (ch>=48 && ch<=57) {
+                System.out.println("Digit");
+            }
+            else{
+                System.out.println("Special Character");
+            }
+          
+        }
+        
+}
+*********************************************************
+import java.util.Scanner;
+public class demo2 {
+    
+        public static void main(String[] args) {
+
+            String gender= args[0];
+            int age=Integer.parseInt(args[1]);
+ 
+            if(!gender.equals("Male") &&!gender.equals("Female"))
+            System.out.println("Invalid gender"); 
+
+            if(age<1 || age>=100)
+            System.out.println("Invalid Age");
+
+            if(gender.equals("Female") && (age>1 && age<=58))
+            System.out.println("The percentage of interset is 8.2%");
+
+            if(gender.equals("Female") && (age>59 && age<=100))
+            System.out.println("The percentage of interset is 9.2%");
+            
+            if(gender.equals("Male") && (age>1 && age<=58))
+            System.out.println("The percentage of interset is 8.4%");
+
+            if(gender.equals("Male") && (age>59 && age<=100))
+            System.out.println("The percentage of interset is 10.5%");
+        }
+
+}
+********************************************************************************
+	import java.util.Scanner;
+public class demo2 {
+    
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            char ab=sc.next().charAt(0);
+            
+            if(Character.isLowerCase(ab)){
+                System.out.println(ab+ "->>>" + Character.toUpperCase(ab));
+            }
+            else 
+            System.out.println(ab+ "->>>" + Character.toLowerCase(ab));
+        }
+
+}
+
+
+import java.util.Scanner;
+public class demo2 {
+    
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            char ab=sc.next().charAt(0);
+            
+            if(Character.isUpperCase(ab)){
+                System.out.println(ab+ "->>>" + Character.toLowerCase(ab));
+            }
+            else 
+            System.out.println(ab+ "->>>" + Character.toUpperCase(ab));
+        }
+
+}
+********************************************************************************
+
+import java.util.Scanner;
+public class demo2 {
+    
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            char ab=sc.next().charAt(0);
+            
+            switch (ab){
+
+                case 'R':
+                System.out.println("R-->>RED");
+                break;
+
+                case 'G':
+                System.out.println("G-->>GREEN");
+                break;
+
+                case 'O':
+                System.out.println("O-->>ORANGE");
+                break;
+
+                case 'Y':
+                System.out.println("Y-->>YELLOW");
+                break;
+
+                case 'W':
+                System.out.println("W-->>WHITE");
+                break;
+                
+                default:
+                System.out.println("Invalid Choice");
+            }
+        }
+
+}
+*************************************************************88
+
+import java.util.Scanner;
+public class demo2 {
+    
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            int ab=Integer.parseInt(args[0]);
+            
+            switch (ab){
+
+                case 1:
+                System.out.println("JAN");
+                break;
+
+                case 2:
+                System.out.println("FEB");
+                break;
+
+                case 3:
+                System.out.println("MARCH");
+                break;
+
+                case 4:
+                System.out.println("APRIL");
+                break;
+
+                case 5:
+                System.out.println("MAY");
+                break;
+
+                case 6:
+                System.out.println("JUNE");
+                break;
+
+                case 7:
+                System.out.println("JULY");
+                break;
+
+                case 8:
+                System.out.println("AUG");
+                break;
+
+                case 9:
+                System.out.println("SEP");
+                break;
+
+                case 10:
+                System.out.println("OCTO");
+                break;
+                case 11:
+                System.out.println("NOV");
+                break;
+                case 12:
+                System.out.println("DEC");
+                break;
+                
+                default:
+                System.out.println("Invalid Choice");
+            }
+        }
+
+}
+**********************************************************
+import java.util.Scanner;
+public class demo2 {
+  static   boolean isPrime=true;
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int sum=0;
+        while(a!=0)
+        {
+            sum+=a%10;
+            a/=10;
+        }
+        System.out.println(sum);
+    }
+}
+*****************************************************
+import java.util.Scanner;
+public class demo2 {
+  static   boolean isPrime=true;
+	public static void main(String[] args) {
+        int a=Integer.parseInt(args[0]);
+        for(int i=0;i<a;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+    }
+}
+*****************************************************
+import java.util.Scanner;
+public class demo2 {
+	public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      int count=0;
+      if(n<2){
+        System.out.println("The given no is not a prime number");
+      }
+      for(int i=1;i<=n;i++){
+        if(n%i==0)
+        count++;
+      }
+      if(count>2){
+        System.out.println("It is not a prime number");
+      }
+      else{
+        System.out.println("It is a prime number");
+      }
+    }
+}
+
+************************************************************
+
+
+
